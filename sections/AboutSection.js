@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from 'react';
 
 function AboutSection() {
@@ -8,7 +9,7 @@ function AboutSection() {
                 className="features-inner section-inner has-bottom-divider"
             >
                 <div className="features-header text-center">
-                    <div className="container-sm">
+                    <div className="container-md">
                         <h2 className="section-title mt-0">
                             About Us
                         </h2>
@@ -44,11 +45,18 @@ function AboutSection() {
                                 src="dist/images/features-box-light.svg"
                                 alt="Feature box"
                             /> */}
-                            <img
-                                className="features-box"
-                                src="dist/images/ride-share-1.jpg"
-                                alt="Feature box"
-                            />
+                            <motion.div
+                                initial={{ x: -5 }}
+                                animate={{ x: 15 }}
+                                transition={{ duration: 1.5, delay: 2 }}
+                            >
+                                <img
+                                    className="features-box"
+                                    src="dist/images/ride-share-1.jpg"
+                                    alt="Feature box"
+                                />
+                            </motion.div>
+
                             <img
                                 className="features-illustration"
                                 src="dist/images/features-illustration-top-light.svg"
@@ -58,6 +66,69 @@ function AboutSection() {
                     </div>
                 </div>
                 <div className="features-wrap">
+                    <div className="feature is-revealing">
+                        <div className="feature-inner">
+                            <div className="feature-icon">
+                                <img
+                                    className="asset-light"
+                                    src="dist/images/feature-03-light.svg"
+                                    alt="Feature 03"
+                                />
+                                <img
+                                    className="asset-dark"
+                                    src="dist/images/feature-03-dark.svg"
+                                    alt="Feature 03"
+                                />
+                            </div>
+                            <div className="feature-content">
+                                <h3 className="feature-title mt-0">
+                                    Discover
+                                </h3>
+                                <p className="text-sm mb-0">
+                                রকিবুল এন্ড মুহাম্মদ ডেলিভারি সার্ভিসেস এল.এল.সি সফলতার সাথে দুবাই এর ডেলিভারি সার্ভিস প্রদান করে আসছে। আর এম ডেলিভারি সার্ভিসেস এল.এল.সি একটি প্রতিশ্রুতিশীল  সংগঠন যারা উন্নয়নশীল দেশের বেকার যুবকদের জন্য কাজের সুযোগ তৈরি করতে দিন-রাত কাজ করছে। 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="feature is-revealing">
+                        <div className="feature-inner">
+                            <motion.div 
+                                initial={{ x: -1200 }}
+                                animate={{ x: 100 }}
+                                transition={{ delay: 1.5 }}
+                                className="features-wrap"
+                                style={{zIndex: 10}}
+                                whileHover={{ scale: 1.2 }}
+                            >
+                                <img 
+                                    src="dist/images/ride-share-mobile-app.jpg"
+                                    width='70%'
+                                    alt="Feature 01"
+                                />
+                            </motion.div>
+                            <div className="feature-icon">
+                                <img
+                                    className="asset-light"
+                                    src="dist/images/feature-01-light.svg"
+                                    alt="Feature 01"
+                                />
+                                <img
+                                    className="asset-dark"
+                                    src="dist/images/feature-01-dark.svg"
+                                    alt="Feature 01"
+                                />
+                            </div>
+                            <div className="feature-content">
+                                <h3 className="feature-title mt-0">
+                                    Opportunity
+                                </h3>
+                                <p className="text-sm mb-0">
+                                বর্তমানে ফুড ডেলিভারি বাইক রাইডার হিসেবে আমরা কিছু রাইডার ভারত, পাকিস্তান, বাংলাদেশ এবং নেপাল থেকে সরবরাহ করছি এবং খুঁজছি।  
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <div className="feature is-revealing">
                         <div className="feature-inner">
                             <div className="feature-icon">
@@ -84,37 +155,25 @@ function AboutSection() {
                                     dui.
                                 </p>
                             </div>
+                            <motion.div 
+                                initial={{ x: 1200 }}
+                                animate={{ x: 100 }}
+                                transition={{ delay: 2 }}
+                                className="features-wrap"
+                                style={{zIndex: 10}}
+                                whileHover={{ scale: 1.7 }}
+                                whileInView={{ opacity: 1 }}
+                            >
+                                <img 
+                                    src="dist/images/app-share-ride.jpg"
+                                    width='70%'
+                                    alt="Feature 01"
+                                />
+                            </motion.div>
                         </div>
                     </div>
-                    <div className="feature is-revealing">
-                        <div className="feature-inner">
-                            <div className="feature-icon">
-                                <img
-                                    className="asset-light"
-                                    src="dist/images/feature-02-light.svg"
-                                    alt="Feature 02"
-                                />
-                                <img
-                                    className="asset-dark"
-                                    src="dist/images/feature-02-dark.svg"
-                                    alt="Feature 02"
-                                />
-                            </div>
-                            <div className="feature-content">
-                                <h3 className="feature-title mt-0">
-                                    Discover
-                                </h3>
-                                <p className="text-sm mb-0">
-                                    Lorem ipsum dolor sit amet,
-                                    consecte adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut
-                                    labore et dolore magna aliqua
-                                    dui.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="feature is-revealing">
+
+                    {/* <div className="feature is-revealing">
                         <div className="feature-inner">
                             <div className="feature-icon">
                                 <img
@@ -141,7 +200,7 @@ function AboutSection() {
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

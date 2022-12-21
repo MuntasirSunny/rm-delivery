@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import React from 'react';
 
@@ -8,16 +9,26 @@ function LandingSection() {
         <div className="hero-inner">
             <div className="hero-copy">
                 <h1 className="hero-title mt-0">
-                Landing template for startups
+                Biker Landing Page 
                 </h1>
                 <p className="hero-paragraph">
-                Our landing page template works on all
-                devices, so you only have to set it up once,
-                and get beautiful results forever.
+                দুবাই ভিত্তিক প্রতিষ্ঠান আর এম ডেলিভারি সার্ভিসেস এল.এল.সি (R.M DELIVERY SERVICE L.L.C) এর সাথে ফুড ডেলিভারি, বাইক রাইডার হিসেবে যোগ দিন
                 </p>
                 <div className="hero-cta">
-                <a className="button button-primary" href="#"
-                    >Register Now</a>
+                {/* <a className="button button-primary" href="#"
+                    >Register Now</a> */}
+                
+                <motion.button
+                    whileHover={{
+                        scale: 1.07,
+                        transition: { duration: 0.5 },
+                    }}
+                    whileTap={{ scale: 0.7 }}
+                    className="button button-primary"
+                    onClick={()=>console.log('clicked!')}
+                >
+                    Register Now
+                </motion.button>
                 {/* <div className="lights-toggle">
                     <input
                     id="lights-toggle"
@@ -73,6 +84,7 @@ function LandingSection() {
                     src="/dist/images/bike-2.png"
                     height={380}
                     width={538}
+                    alt="bike-sharing-background"
                 />
                 {/* <img
                     className="hero-media-image"
