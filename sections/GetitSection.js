@@ -27,6 +27,19 @@ function GetitSection() {
                 </motion.button>
                 </div>
             </div>
+            <br />
+            <div className="cta-cta">
+                <motion.h5
+                    whileHover={{
+                        scale: 1.07,
+                        transition: { duration: 0.5 },
+                    }}
+                    whileTap={{ scale: 0.7 }}
+                    style={{minWidth: 500, color: '#535FD7'}}
+                >
+                    Call for information : +880-1000-0000
+                </motion.h5>
+                </div>
             </div>
         </div>
     </section>

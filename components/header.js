@@ -11,8 +11,9 @@ function HeaderComponent() {
                 <img
                     className="header-logo-image"
                     //src="dist/images/logo-light.svg"
-                    src="dist/images/logo-light.svg"
+                    src="dist/images/orbit-logo.png"
                     alt="Logo"
+                    width='25%'
                 />
                 {/* <img
                     className="header-logo-image"

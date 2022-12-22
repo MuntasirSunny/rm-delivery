@@ -65,6 +65,7 @@ function AboutSection() {
                         </div>
                     </div>
                 </div>
+                
                 <div className="features-wrap">
                     <div className="feature is-revealing">
                         <div className="feature-inner">
@@ -130,7 +131,7 @@ function AboutSection() {
                     </div>
                     
                     <div className="feature is-revealing">
-                        <div className="feature-inner">
+                        <div className="feature-inner" style={{alignItems: 'center'}}>
                             <div className="feature-icon">
                                 <img
                                     className="asset-light"
@@ -143,16 +144,25 @@ function AboutSection() {
                                     alt="Feature 01"
                                 />
                             </div>
-                            <div className="feature-content">
+                            <div className="feature-content" style={{minWidth: '400px'}}>
                                 <h3 className="feature-title mt-0">
-                                    Discover
+                                    Packages
                                 </h3>
                                 <p className="text-sm mb-0">
-                                    Lorem ipsum dolor sit amet,
-                                    consecte adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut
-                                    labore et dolore magna aliqua
-                                    dui.
+                                আমাদের প্যাকেজে রয়েছে :-
+                                </p>
+                                <ul className="text-sm mb-0" style={{marginTop: 5}}>
+                                    <li>এমপ্লয়মেন্ট ভিসা</li>
+                                    <li>এয়ার টিকেট</li>
+                                    <li>৩-৪ মাসের থাকার খরচ (কাজ শুরুর আগে পর্যন্ত)</li>
+                                    <li>আরব আমিরাতে ড্রাইভিং লাইসেন্স </li>
+                                    <li>বাইক</li>
+                                    <li>মোবাইল সিম এবং ডাটা</li>
+                                    <li>যেকোনো বিষয়ে তাৎক্ষণিক সমাধান দেবার জন্য রয়েছে বিশেষজ্ঞ দল</li>
+                                </ul>
+                                <br />
+                                <p className="text-sm mb-0">
+                                <em> ** খাবার, থাকা এবং ব্যক্তিগত খরচ প্যাকেজ বহির্ভুত </em>
                                 </p>
                             </div>
                             <motion.div 
@@ -173,34 +183,51 @@ function AboutSection() {
                         </div>
                     </div>
 
-                    {/* <div className="feature is-revealing">
+                    <div className="feature is-revealing">
                         <div className="feature-inner">
+                            <motion.div 
+                                initial={{ x: -1200 }}
+                                animate={{ x: 100 }}
+                                transition={{ delay: 1.5 }}
+                                className="features-wrap"
+                                style={{zIndex: 10}}
+                                whileHover={{ scale: 1.2 }}
+                            >
+                                <img 
+                                    src="dist/images/ability-vector.jpg"
+                                    width='70%'
+                                    alt="Feature 01"
+                                />
+                            </motion.div>
                             <div className="feature-icon">
                                 <img
                                     className="asset-light"
-                                    src="dist/images/feature-03-light.svg"
-                                    alt="Feature 03"
+                                    src="dist/images/feature-01-light.svg"
+                                    alt="Feature 01"
                                 />
                                 <img
                                     className="asset-dark"
-                                    src="dist/images/feature-03-dark.svg"
-                                    alt="Feature 03"
+                                    src="dist/images/feature-01-dark.svg"
+                                    alt="Feature 01"
                                 />
                             </div>
-                            <div className="feature-content">
+                            <div className="feature-content" style={{minWidth: '400px'}}>
                                 <h3 className="feature-title mt-0">
-                                    Discover
+                                    Eligibility
                                 </h3>
                                 <p className="text-sm mb-0">
-                                    Lorem ipsum dolor sit amet,
-                                    consecte adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut
-                                    labore et dolore magna aliqua
-                                    dui.
+                                কর্মে যোগদানের জন্য আপনার প্রাথমিক যোগ্যতা :-
                                 </p>
+                                <ul className="text-sm mb-0" style={{marginTop: 5}}>
+                                    <li>পুরুষ হতে হবে</li>
+                                    <li>এসএসসি পাশ হতে হবে</li>
+                                    <li>ফিজিক্যালি ফিট হতে হবে</li>
+                                    <li>বয়স ২১-৩৫ বছরের মধ্যে হতে হবে</li>
+                                    <li>স্মার্টফোন এ ম্যাপ নেভিগেশন এ পারদর্শী হতে হবে</li>
+                                </ul>
                             </div>
                         </div>
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </div>
